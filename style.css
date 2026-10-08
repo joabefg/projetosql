@@ -1,7 +1,30 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*LOGO*/
+#logo {
+    width: 200px;
+    height: 210px;
+}
+
+
+/*PERSONAGEM PRINCIPAL*/
+#character_01 {
+    width: 550px;
+    height: 350px;
+}
+
+h1 {
+    color: #712cf9;
+    text-align: center;
+
+}
+
 .col {
     background-color: rgba(113, 44, 249, 0.15);
     border: 1px solid rgba(113, 44, 249, 0.3);
-}
-title {
-    color: #712cf9;
 }

@@ -17,6 +17,7 @@ def excluir_carta(id):
     cursor.close()
     conexao.close() 
 
+<<<<<<< HEAD
 def buscar_carta_por_id(id):
     conexao = conectar()
     cursor = conexao.cursor()
@@ -28,17 +29,45 @@ def buscar_carta_por_id(id):
 
    
 
+=======
+>>>>>>> 23b1cb8b339e3d8083aa240a5b64477e39c1b67d
 def cadastrar_carta(nome, desc, eft, atk, de, crit):
     conexao = conectar()
     cursor = conexao.cursor()
     comando = """
+<<<<<<< HEAD
     insert into carta(nome, descricao, efeito, ataque, defesa, critico)
     values (%s, %s, %s, %s, %s, %s)
     """
+=======
+    INSERT INTO carta 
+    (nome, descricao, efeito, ataque, defesa, critico) 
+    VALUES (%s, %s, %s, %s, %s, %s)
+ 
+     """
+>>>>>>> 23b1cb8b339e3d8083aa240a5b64477e39c1b67d
     valores = (nome, desc, eft, atk, de, crit)
     cursor.execute(comando, valores)
     conexao.commit()
     cursor.close()
     conexao.close()
 
+<<<<<<< HEAD
 buscar_carta_por_id(4)
+=======
+def buscar_carta_por_cod(cod):
+    conexao = conectar()
+    cursor = conexao.cursor()
+    cursor.execute(
+        "SELECT * FROM carta WHERE cod = %s", (cod,))
+    carta = cursor.fetchone()
+    print(carta)
+    cursor.close()
+    conexao.close()
+
+
+cadastrar_carta("Radiotatividade", "desc", "", 12, 8 , 80)
+listar_cartas()
+
+buscar_carta_por_cod(3)
+>>>>>>> 23b1cb8b339e3d8083aa240a5b64477e39c1b67d

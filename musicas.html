@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h2>♫ Meu Spotify</h2>
+        <p>Início</p>
+        <p>Minha biblioteca</p>
+        <p>Minhas músicas</p>
+    </aside>
+
+    <main class="conteudo">
+        <header>
+            <h1>Minha playlist</h1>
+            <p>Suas músicas, do seu jeito.</p>
+        </header>
+
+        <input
+            type="search"
+            id="pesquisa"
+            placeholder="Buscar música, artista ou gênero..."
+            aria-label="Buscar músicas"
+        >
+
+        <h2>Todas as músicas</h2>
+        <div id="playlist"></div>
+    </main>
+
+    <footer class="player">
+        <div class="musica-atual">
+            <img id="playerCapa" src="" alt="Capa da música">
+            <div>
+                <strong id="playerNome">Escolha uma música</strong>
+                <p id="playerBanda">Sua biblioteca</p>
+            </div>
+        </div>
+
+        <button id="btnPlay" aria-label="Reproduzir ou pausar">▶</button>
+
+        <audio id="audioPlayer" preload="none"></audio>
+    </footer>
+
+    <script src="musicas.js"></script>
+</body>
+</html>

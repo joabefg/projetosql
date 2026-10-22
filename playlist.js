@@ -1,11 +1,11 @@
  arqvuiro: musicas.js
 let musicas = [
     {   id: 1, 
-        url: 'https://media.pitchfork.com/photos/5929ba209d034d5c69bf53ad/master/pass/5b47b0b4.jpg',
-        genero: 'Alternativo',
-        ano: '1995',
-        banda: 'The Strokes',
-        nome: 'Call It Fate, Call It Karma'
+        url: 'https://open.spotify.com/album/6Otfotttr4Eym1WvTyxk1z',
+        genero: 'Trap',
+        ano: '2025',
+        artista: 'Veigh',
+        nome: 'Mônaco freestyle'
     },
     {   id: 2, 
         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqtmmhxVPWPtV3SfTNbFD5dJYF80Zso3XO3i_EN_FPA&s=10',

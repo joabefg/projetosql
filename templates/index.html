@@ -7,7 +7,7 @@
   <title>SQL: Dungeons and Databases</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,11 +15,16 @@
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img id="logo" src="assets/LOGO_SQL.png" alt="Logo">
-         <img id="background-geral" src="assets/ALL FUNDO PRINCIPAL.png" alt="All-Fundo">
-         <img id="background-jogo" src="assets/FUNDO PRINCIPAL (básico).png" alt="Fundo">
-        <img id="character_01" src="assets/HEROI_SQL.png" alt="Aventureiro">
+        
+         <div class="jogo-wrapper">
+        <img id="logo" src="/assets/LOGO-SQL.png" alt="Logo">
+          </div>
 
+               <!-- GAIOLA DO CENÁRIO PARA EMPILHAR -->
+      <div class="container-cenario">
+         <img id="background-jogo" src="/assets/FUNDO-PRINCIPAL.png" alt="Fundo">
+        <img id="character_01" src="/assets/HEROI-SQL.png" alt="Aventureiro">
+      </div>
 
       </a>
     </div>
@@ -36,6 +41,20 @@
     </div>
   </main>
 
+        <a href="/aventureiro">Iniciar a Aventura</a>
+
 </body>
 
 </html>
+
+
+<!-- COMANDO EXEMPLO DO JOABS -->
+
+
+<!--
+<html>
+  <body>
+    <h1>Bem vindo!</h1>
+    <a href="/aventureiro">Iniciar a Aventura</a>
+  </body>
+</html> 

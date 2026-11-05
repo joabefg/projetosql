@@ -1,0 +1,69 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*LOGO*/
+#logo {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    top: 15px;  /* Distância do topo (ajuste se quiser mais perto do teto) */
+    left: 15px; /* Distância da esquerda (ajuste se quiser mais perto da parede) */
+
+    /* Garante que a logo fique na camada mais alta, por cima de qualquer fundo */
+    z-index: 10; 
+}
+
+
+/*PERSONAGEM PRINCIPAL*/
+#character_01 {
+    width: 950px;
+    height: auto;
+    position: center;
+}
+
+#background-jogo {
+    width: 1650px;
+    height: 1000px;
+    display: block;
+}
+
+
+h1 {
+    color: #712cf9;
+    text-align: center;
+
+}
+
+.col {
+    background-color: rgba(113, 44, 249, 0.15);
+    border: 1px solid rgba(113, 44, 249, 0.3);
+}
+
+/* 1. Define o tamanho do cenário baseado na sua imagem de fundo */
+.container-cenario {
+    position: relative;
+    display: inline-block;
+    width: 100%;       /* Ou defina um tamanho fixo ex: width: 800px; */
+    max-width: 10000px; /* Ajuste o limite máximo de acordo com sua arte */
+    overflow: hidden;
+}
+
+/* 3. O herói flutua e vai direto para o centro do fundo */
+#character_01 {
+    position: absolute;
+    
+    /* Joga o pivô da imagem no centro do fundo */
+    top: 75%;
+    left: 15%;
+    
+    /* Alinha o centro do herói com o centro do fundo */
+    transform: translate(-50%, -50%);
+    
+    /* Garante que ele fique na camada da frente */
+    z-index: 2; 
+}
+

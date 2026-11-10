@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: black;
     color: aliceblue;
@@ -6,4 +15,20 @@ body {
 .col {
     background-color: rgba(126, 39, 39, 0.719);
     border: 1px solid rgb(255, 0, 0);
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row; 
+}
+
+#elementos-esquerda {
+    width: 50%;
+    height: 100%;
+}
+
+#elementos-direita {
+    width: 50%;
+    height: 100%;
+    
 }
